@@ -46,7 +46,7 @@ AutoHotkey скрипт для упрощения РП-отыгровок в Rob
 
 ## 👨‍💻 Разработчик
 
-**GAMER123TOP**
+**GAMER123TOP** — единственный разработчик проекта.
 
 Связаться со мной:
 - **Telegram:** [@GAMER123TOPTG](https://t.me/GAMER123TOPTG)
