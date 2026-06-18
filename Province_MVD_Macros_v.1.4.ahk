@@ -569,6 +569,7 @@ GetAccidentFullInput() {
 
 ; ===== 1. ЧИСТКА ПМ (Numpad1) =====
 Numpad1::
+F1::
 {
     global StopMacro
     if StopMacro {
@@ -675,6 +676,7 @@ Numpad1::
 
 ; ===== 2. ПРЕДСТАВЛЕНИЕ (Numpad2) =====
 Numpad2::
+F2::
 {
     global StopMacro
     if StopMacro {
@@ -705,6 +707,7 @@ Numpad2::
 
 ; ===== 3. КСИВА (Numpad3) =====
 Numpad3::
+F3::
 {
     global StopMacro
     if StopMacro {
@@ -781,6 +784,7 @@ Numpad3::
 
 ; ===== 4. НАРУЧНИК / ОБЫСК (Numpad4) =====
 Numpad4::
+F4::
 {
     global StopMacro
     if StopMacro {
@@ -1088,6 +1092,7 @@ Numpad4::
 
 ; ===== 5. РАЦИЯ (Numpad5) =====
 Numpad5::
+F5::
 {
     global StopMacro
     if StopMacro {
@@ -1158,6 +1163,7 @@ Numpad5::
 
 ; ===== 6. МИРАНДА (Numpad6) =====
 Numpad6::
+F6::
 {
     global StopMacro
     if StopMacro {
@@ -1224,6 +1230,7 @@ Numpad6::
 
 ; ===== 7. ВЕСТИ К МАШИНЕ / ИВС (Numpad7) =====
 Numpad7::
+F7::
 {
     global StopMacro
     if StopMacro {
@@ -1311,6 +1318,7 @@ Numpad7::
 
 ; ===== 8. ПЕРЕВОД ПМ В БОЕВОЕ ПОЛОЖЕНИЕ (Numpad8) =====
 Numpad8::
+F8::
 {
     global StopMacro
     if StopMacro {
@@ -1406,6 +1414,7 @@ Numpad8::
 
 ; ===== 9. МЕГАФОН (Numpad9) =====
 Numpad9::
+F9::
 {
     global StopMacro
     if StopMacro {
@@ -1495,6 +1504,7 @@ Numpad9::
 
 ; ===== 10. ШТРАФ (Numpad0) =====
 Numpad0::
+F10::
 {
     global StopMacro
     if StopMacro {
@@ -1687,6 +1697,7 @@ Numpad0::
 
 ; ===== ВЫТАСКИВАНИЕ ИЗ МАШИНЫ (Ctrl+Numpad1) =====
 ^Numpad1::
+^F1::
 {
     global StopMacro
     if StopMacro {
@@ -1909,6 +1920,7 @@ Numpad0::
 
 ; ===== ОФОРМЛЕНИЕ ДТП (Ctrl+Numpad2) =====
 ^Numpad2::
+^F2::
 {
     global StopMacro
     if StopMacro {
