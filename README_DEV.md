@@ -4,28 +4,6 @@
 
 ---
 
-## 📁 Структура репозитория
-
-Binders_RP_Roblox/
-├── Zarechensk/
-│   ├── Zarechensk_MVD_Macros.ahk
-│   ├── SMP_Macros.ahk
-│   └── Civilian_Macros.ahk
-├── Kemerovo/
-│   ├── Kemerovo_MVD_Macros.ahk
-│   ├── SMP_Macros.ahk
-│   └── Civilian_Macros.ahk
-├── Province/
-│   ├── Province_MVD_Macros.ahk
-│   ├── Province_SMP_Macros.ahk
-│   └── Province_Civilian_Macros.ahk
-├── README.md
-├── README_DEV.md
-├── LICENSE
-└── LICENSE_RU
-
----
-
 ## 🎮 Файлы для фракций
 
 | Игра | МВД | СМП | Гражданские |
