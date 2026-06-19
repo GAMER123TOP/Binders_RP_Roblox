@@ -68,8 +68,8 @@ AutoHotkey скрипты для упрощения РП-отыгровок в R
 
 Если у вас есть идея для новой отыгровки, команды или улучшения — поделитесь!
 
-- **Discord:** gamer123top
-- **Telegram:** @GAMER123TOPTG
+- **Discord:** [gamer123top](https://discord.com/users/gamer123top)
+- **Telegram:** [@GAMER123TOPTG](https://t.me/GAMER123TOPTG)
 - **Discord сервер студии:** [dsc.gg/cubefusion](https://dsc.gg/cubefusion) → Форум → Идеи
 
 Желательно указать:
@@ -83,8 +83,8 @@ AutoHotkey скрипты для упрощения РП-отыгровок в R
 
 Если вы нашли баг в процессе разработки, сообщите автору любым удобным способом:
 
-- **Discord:** gamer123top
-- **Telegram:** @GAMER123TOPTG
+- **Discord:** [gamer123top](https://discord.com/users/gamer123top)
+- **Telegram:** [@GAMER123TOPTG](https://t.me/GAMER123TOPTG)
 - **Discord сервер студии:** [dsc.gg/cubefusion](https://dsc.gg/cubefusion) → Форум → Баги
 
 Желательно указать:
