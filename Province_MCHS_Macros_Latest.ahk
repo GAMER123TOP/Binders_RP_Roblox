@@ -277,7 +277,7 @@ F1::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me прибыл на место вызова по адресу: " Address)
+    SendText("/me прибыл на место вызова по адресу: " Address " (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -287,7 +287,7 @@ F1::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/do На месте ЧП слышны крики, чувствуется запах гари")
+    SendText("/do На месте ЧП слышны крики, чувствуется запах гари (da da da)")
     Send("{Enter}")
 
     ToolTip("Готово!")
@@ -317,7 +317,7 @@ F2::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me осматривает место происшествия, оценивает обстановку")
+    SendText("/me осматривает место происшествия, оценивает обстановку (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -328,7 +328,7 @@ F2::
         Sleep(50)
         Send("{Backspace}")
         PauseWithCheck(300)
-        SendText("/do Огонь распространяется на соседние здания, слышен треск")
+        SendText("/do Огонь распространяется на соседние здания, слышен треск (da da da)")
     } else if (Situation = "ДТП") {
         Send("{Г down}")
         Sleep(30)
@@ -336,7 +336,7 @@ F2::
         Sleep(50)
         Send("{Backspace}")
         PauseWithCheck(300)
-        SendText("/do Машины сильно деформированы, есть риск возгорания топлива")
+        SendText("/do Машины сильно деформированы, есть риск возгорания топлива (da da da)")
     } else if (Situation = "УТЕЧКА ГАЗА") {
         Send("{Г down}")
         Sleep(30)
@@ -344,7 +344,7 @@ F2::
         Sleep(50)
         Send("{Backspace}")
         PauseWithCheck(300)
-        SendText("/do В воздухе чувствуется запах газа, есть угроза взрыва")
+        SendText("/do В воздухе чувствуется запах газа, есть угроза взрыва (da da da)")
     } else if (Situation = "ЗАВАЛ") {
         Send("{Г down}")
         Sleep(30)
@@ -352,7 +352,7 @@ F2::
         Sleep(50)
         Send("{Backspace}")
         PauseWithCheck(300)
-        SendText("/do Конструкции нестабильны, есть риск обрушения")
+        SendText("/do Конструкции нестабильны, есть риск обрушения (da da da)")
     }
     Send("{Enter}")
 
@@ -379,7 +379,7 @@ F3::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me надевает СИЗОД, проверяет герметичность")
+    SendText("/me надевает СИЗОД, проверяет герметичность (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -389,7 +389,7 @@ F3::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/do СИЗОД готов, дыхание через аппарат свободное")
+    SendText("/do СИЗОД готов, дыхание через аппарат свободное (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -399,7 +399,7 @@ F3::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me входит в задымлённое помещение, пригибаясь")
+    SendText("/me входит в задымлённое помещение, пригибаясь (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -409,7 +409,7 @@ F3::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/do Видимость почти нулевая, чувствуется сильное задымление")
+    SendText("/do Видимость почти нулевая, чувствуется сильное задымление (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -419,7 +419,7 @@ F3::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me ведёт рукой вдоль стены, ориентируясь на ощупь")
+    SendText("/me ведёт рукой вдоль стены, ориентируясь на ощупь (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -429,7 +429,7 @@ F3::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/do Поиск идёт вслепую, слышен треск горящих конструкций")
+    SendText("/do Поиск идёт вслепую, слышен треск горящих конструкций (da da da)")
     Send("{Enter}")
 
     ToolTip("Готово!")
@@ -455,7 +455,7 @@ F4::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me достаёт СИЗОД, проверяет целостность маски")
+    SendText("/me достаёт СИЗОД, проверяет целостность маски (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -465,7 +465,7 @@ F4::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/do Маска герметична, баллон заправлен")
+    SendText("/do Маска герметична, баллон заправлен (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -475,7 +475,7 @@ F4::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me надевает СИЗОД, регулирует крепления")
+    SendText("/me надевает СИЗОД, регулирует крепления (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -485,7 +485,7 @@ F4::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/do Маска плотно прилегает, дыхание свободное")
+    SendText("/do Маска плотно прилегает, дыхание свободное (da da da)")
     Send("{Enter}")
 
     ToolTip("Готово!")
@@ -511,7 +511,7 @@ F5::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me снимает огнетушитель с крепления (4-5 кг)")
+    SendText("/me снимает огнетушитель с крепления (4-5 кг) (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -521,7 +521,7 @@ F5::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/do Огнетушитель в руке, чувствуется вес")
+    SendText("/do Огнетушитель в руке, чувствуется вес (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -531,7 +531,7 @@ F5::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me выдёргивает чеку, направляет раструб на огонь")
+    SendText("/me выдёргивает чеку, направляет раструб на огонь (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -541,7 +541,7 @@ F5::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/do Из огнетушителя выходит белая пена, пламя гаснет")
+    SendText("/do Из огнетушителя выходит белая пена, пламя гаснет (da da da)")
     Send("{Enter}")
 
     ToolTip("Готово!")
@@ -567,7 +567,7 @@ F6::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me открывает отсек пожарной машины, достаёт рукав")
+    SendText("/me открывает отсек пожарной машины, достаёт рукав (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -577,7 +577,7 @@ F6::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/do Рукав скатан, готов к развёртыванию")
+    SendText("/do Рукав скатан, готов к развёртыванию (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -587,7 +587,7 @@ F6::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me подключает рукав к выходу на пожарной машине")
+    SendText("/me подключает рукав к выходу на пожарной машине (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -597,7 +597,7 @@ F6::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/do Соединение герметично, зажимы зафиксированы")
+    SendText("/do Соединение герметично, зажимы зафиксированы (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -607,7 +607,7 @@ F6::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me разворачивает рукав в сторону очага возгорания")
+    SendText("/me разворачивает рукав в сторону очага возгорания (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -617,7 +617,7 @@ F6::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/do Рукав заполняется водой, давление нарастает")
+    SendText("/do Рукав заполняется водой, давление нарастает (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -627,7 +627,7 @@ F6::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me направляет ствол на огонь, открывает подачу воды")
+    SendText("/me направляет ствол на огонь, открывает подачу воды (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -637,7 +637,7 @@ F6::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/do Вода бьёт мощной струёй, пламя сбивается")
+    SendText("/do Вода бьёт мощной струёй, пламя сбивается (da da da)")
     Send("{Enter}")
 
     ToolTip("Готово!")
@@ -663,7 +663,7 @@ F7::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me выводит людей из опасной зоны, прикрывая лицо")
+    SendText("/me выводит людей из опасной зоны, прикрывая лицо (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -673,7 +673,7 @@ F7::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/do Люди испуганы, но все целы, эвакуация завершена")
+    SendText("/do Люди испуганы, но все целы, эвакуация завершена (da da da)")
     Send("{Enter}")
 
     ToolTip("Готово!")
@@ -699,7 +699,7 @@ F8::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me проливает место пожара водой")
+    SendText("/me проливает место пожара водой (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -709,7 +709,7 @@ F8::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/do Поверхность остывает, дым рассеивается")
+    SendText("/do Поверхность остывает, дым рассеивается (da da da)")
     Send("{Enter}")
 
     ToolTip("Готово!")
@@ -740,7 +740,7 @@ F9::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me снял рацию")
+    SendText("/me снял рацию (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -750,7 +750,7 @@ F9::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me зажал кнопку PPT")
+    SendText("/me зажал кнопку PPT (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -760,7 +760,7 @@ F9::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/do Из динамика послышался звук включения")
+    SendText("/do Из динамика послышался звук включения (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -770,7 +770,7 @@ F9::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("-Р- " Message)
+    SendText("-Р- " Message " (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -780,7 +780,7 @@ F9::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me отпустил кнопку и убрал рацию")
+    SendText("/me отпустил кнопку и убрал рацию (da da da)")
     Send("{Enter}")
 
     ToolTip("Готово!")
@@ -806,7 +806,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me объявляет сбор всех свободных экипажей МЧС")
+    SendText("/me объявляет сбор всех свободных экипажей МЧС (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -816,7 +816,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/do На месте ЧП паника, слышны крики о помощи")
+    SendText("/do На месте ЧП паника, слышны крики о помощи (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -826,7 +826,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me запрыгивает в машину, заводит двигатель")
+    SendText("/me запрыгивает в машину, заводит двигатель (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -836,7 +836,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/do Машина готова к выезду, все на местах")
+    SendText("/do Машина готова к выезду, все на местах (da da da)")
     Send("{Enter}")
 
     ToolTip("Готово!")
@@ -862,7 +862,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me проверяет давление в баллоне СИЗОД")
+    SendText("/me проверяет давление в баллоне СИЗОД (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -872,7 +872,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/do Давление в норме, воздуха хватит на 30 минут")
+    SendText("/do Давление в норме, воздуха хватит на 30 минут (da da da)")
     Send("{Enter}")
 
     ToolTip("Готово!")
@@ -898,7 +898,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me заменяет пустой баллон СИЗОД на полный")
+    SendText("/me заменяет пустой баллон СИЗОД на полный (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -908,7 +908,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/do Баллон зафиксирован, система герметична")
+    SendText("/do Баллон зафиксирован, система герметична (da da da)")
     Send("{Enter}")
 
     ToolTip("Готово!")
@@ -934,7 +934,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me снимает СИЗОД, вытирает лицо")
+    SendText("/me снимает СИЗОД, вытирает лицо (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -944,7 +944,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/do СИЗОД убран в чехол, готов к использованию")
+    SendText("/do СИЗОД убран в чехол, готов к использованию (da da da)")
     Send("{Enter}")
 
     ToolTip("Готово!")
@@ -970,7 +970,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me оценивает завал, ищет безопасный подход")
+    SendText("/me оценивает завал, ищет безопасный подход (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -980,7 +980,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/do Из-под завалов слышны слабые стоны")
+    SendText("/do Из-под завалов слышны слабые стоны (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -990,7 +990,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me аккуратно разбирает завалы, работая руками")
+    SendText("/me аккуратно разбирает завалы, работая руками (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1000,7 +1000,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/do Пострадавший найден, зажат плитой")
+    SendText("/do Пострадавший найден, зажат плитой (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1010,7 +1010,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me освобождает пострадавшего, оказывает первую помощь")
+    SendText("/me освобождает пострадавшего, оказывает первую помощь (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1020,7 +1020,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/do Пострадавший в сознании, дыхание стабильное")
+    SendText("/do Пострадавший в сознании, дыхание стабильное (da da da)")
     Send("{Enter}")
 
     ToolTip("Готово!")
@@ -1046,7 +1046,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me вскрывает заблокированную дверь с помощью лома")
+    SendText("/me вскрывает заблокированную дверь с помощью лома (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1056,7 +1056,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/do Дверь поддаётся, проход открыт")
+    SendText("/do Дверь поддаётся, проход открыт (da da da)")
     Send("{Enter}")
 
     ToolTip("Готово!")
@@ -1082,7 +1082,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me ведёт поиск в сильно задымлённом помещении")
+    SendText("/me ведёт поиск в сильно задымлённом помещении (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1092,7 +1092,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/do Видимость нулевая, поиск идёт вслепую")
+    SendText("/do Видимость нулевая, поиск идёт вслепую (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1102,7 +1102,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me нащупывает стены, двигается медленно")
+    SendText("/me нащупывает стены, двигается медленно (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1112,7 +1112,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/do Слышен треск, но людей не видно")
+    SendText("/do Слышен треск, но людей не видно (da da da)")
     Send("{Enter}")
 
     ToolTip("Готово!")
@@ -1143,7 +1143,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me подходит к командиру, докладывает обстановку")
+    SendText("/me подходит к командиру, докладывает обстановку (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1153,7 +1153,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/do Пожар локализован, угрозы распространения нет")
+    SendText("/do Пожар локализован, угрозы распространения нет (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1163,7 +1163,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me докладывает количество пострадавших")
+    SendText("/me докладывает количество пострадавших (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1173,7 +1173,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/do Пострадавших: " Count ", переданы медикам")
+    SendText("/do Пострадавших: " Count ", переданы медикам (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1183,7 +1183,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me запрашивает дальнейшие указания")
+    SendText("/me запрашивает дальнейшие указания (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1193,7 +1193,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/do Командир кивает, отдаёт приказ на проливку")
+    SendText("/do Командир кивает, отдаёт приказ на проливку (da da da)")
     Send("{Enter}")
 
     ToolTip("Готово!")
@@ -1219,7 +1219,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me запрашивает подкрепление по рации")
+    SendText("/me запрашивает подкрепление по рации (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1229,7 +1229,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/do Рация передала: `"Подкрепление в пути`"")
+    SendText("/do Рация передала: `"Подкрепление в пути`" (da da da)")
     Send("{Enter}")
 
     ToolTip("Готово!")
@@ -1255,7 +1255,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me докладывает об окончании работ")
+    SendText("/me докладывает об окончании работ (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1265,7 +1265,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/do Объект безопасен, очаг возгорания нейтрализован")
+    SendText("/do Объект безопасен, очаг возгорания нейтрализован (da da da)")
     Send("{Enter}")
 
     ToolTip("Готово!")
@@ -1291,7 +1291,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me отбой тревоги, вызов ложный")
+    SendText("/me отбой тревоги, вызов ложный (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1301,7 +1301,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/do При повторной проверке очаг не обнаружен")
+    SendText("/do При повторной проверке очаг не обнаружен (da da da)")
     Send("{Enter}")
 
     ToolTip("Готово!")
@@ -1331,7 +1331,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me осматривает пострадавшего на наличие травм")
+    SendText("/me осматривает пострадавшего на наличие травм (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1341,7 +1341,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/do У пострадавшего ссадины и ушибы, переломов нет")
+    SendText("/do У пострадавшего ссадины и ушибы, переломов нет (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1351,7 +1351,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me накладывает стерильную повязку на рану")
+    SendText("/me накладывает стерильную повязку на рану (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1361,7 +1361,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/do Кровотечение остановлено, повязка наложена правильно")
+    SendText("/do Кровотечение остановлено, повязка наложена правильно (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1371,7 +1371,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me укладывает пострадавшего в устойчивое боковое положение")
+    SendText("/me укладывает пострадавшего в устойчивое боковое положение (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1381,7 +1381,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/do Дыхание свободное, пострадавший в сознании")
+    SendText("/do Дыхание свободное, пострадавший в сознании (da da da)")
     Send("{Enter}")
 
     ToolTip("Готово!")
@@ -1407,7 +1407,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me проверяет герметичность маски СИЗОД")
+    SendText("/me проверяет герметичность маски СИЗОД (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1417,7 +1417,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/do Маска плотно прилегает, утечек нет")
+    SendText("/do Маска плотно прилегает, утечек нет (da da da)")
     Send("{Enter}")
 
     ToolTip("Готово!")
@@ -1443,7 +1443,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me снимает маску СИЗОД, проверяет стёкла")
+    SendText("/me снимает маску СИЗОД, проверяет стёкла (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1453,7 +1453,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/do Стёкла целы, маска готова к повторному использованию")
+    SendText("/do Стёкла целы, маска готова к повторному использованию (da da da)")
     Send("{Enter}")
 
     ToolTip("Готово!")
@@ -1479,7 +1479,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me проверяет клапан выдоха СИЗОД")
+    SendText("/me проверяет клапан выдоха СИЗОД (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1489,7 +1489,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/do Клапан работает исправно, воздух выходит свободно")
+    SendText("/do Клапан работает исправно, воздух выходит свободно (da da da)")
     Send("{Enter}")
 
     ToolTip("Готово!")
@@ -1515,7 +1515,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me проверяет срок годности огнетушителя")
+    SendText("/me проверяет срок годности огнетушителя (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1525,7 +1525,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/do Срок годности в норме, огнетушитель готов к применению")
+    SendText("/do Срок годности в норме, огнетушитель готов к применению (da da da)")
     Send("{Enter}")
 
     ToolTip("Готово!")
@@ -1551,7 +1551,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me проверяет соединение рукава с машиной")
+    SendText("/me проверяет соединение рукава с машиной (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1561,7 +1561,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/do Соединение герметично, подтеканий нет")
+    SendText("/do Соединение герметично, подтеканий нет (da da da)")
     Send("{Enter}")
 
     ToolTip("Готово!")
@@ -1587,7 +1587,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me пересчитывает эвакуированных людей")
+    SendText("/me пересчитывает эвакуированных людей (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1597,7 +1597,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/do Все на месте, потерь нет")
+    SendText("/do Все на месте, потерь нет (da da da)")
     Send("{Enter}")
 
     ToolTip("Готово!")
@@ -1623,7 +1623,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me проверяет температуру после проливки")
+    SendText("/me проверяет температуру после проливки (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1633,7 +1633,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/do Температура в норме, возгорание исключено")
+    SendText("/do Температура в норме, возгорание исключено (da da da)")
     Send("{Enter}")
 
     ToolTip("Готово!")
@@ -1659,7 +1659,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me настраивает частоту рации")
+    SendText("/me настраивает частоту рации (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1669,7 +1669,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/do Связь установлена, помех нет")
+    SendText("/do Связь установлена, помех нет (da da da)")
     Send("{Enter}")
 
     ToolTip("Готово!")
@@ -1695,7 +1695,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me проверяет готовность экипажа")
+    SendText("/me проверяет готовность экипажа (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1705,7 +1705,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/do Все сотрудники на местах, готовы к выезду")
+    SendText("/do Все сотрудники на местах, готовы к выезду (da da da)")
     Send("{Enter}")
 
     ToolTip("Готово!")
@@ -1731,7 +1731,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me докладывает о ходе работ")
+    SendText("/me докладывает о ходе работ (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1741,7 +1741,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/do Работы идут по плану, отклонений нет")
+    SendText("/do Работы идут по плану, отклонений нет (da da da)")
     Send("{Enter}")
 
     ToolTip("Готово!")
@@ -1767,7 +1767,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me докладывает о расходе воды")
+    SendText("/me докладывает о расходе воды (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1777,7 +1777,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/do Воды достаточно, запас пополнен")
+    SendText("/do Воды достаточно, запас пополнен (da da da)")
     Send("{Enter}")
 
     ToolTip("Готово!")
@@ -1803,7 +1803,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me докладывает о состоянии техники")
+    SendText("/me докладывает о состоянии техники (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1813,7 +1813,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/do Техника исправна, готова к дальнейшей работе")
+    SendText("/do Техника исправна, готова к дальнейшей работе (da da da)")
     Send("{Enter}")
 
     ToolTip("Готово!")
@@ -1839,7 +1839,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me проверяет пульс у пострадавшего")
+    SendText("/me проверяет пульс у пострадавшего (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1849,7 +1849,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/do Пульс прощупывается, ритмичный")
+    SendText("/do Пульс прощупывается, ритмичный (da da da)")
     Send("{Enter}")
 
     ToolTip("Готово!")
@@ -1875,7 +1875,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me проверяет дверь на наличие заклинивания")
+    SendText("/me проверяет дверь на наличие заклинивания (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1885,7 +1885,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/do Дверь открывается свободно")
+    SendText("/do Дверь открывается свободно (da da da)")
     Send("{Enter}")
 
     ToolTip("Готово!")
@@ -1911,7 +1911,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me прислушивается к звукам в дыму")
+    SendText("/me прислушивается к звукам в дыму (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1921,7 +1921,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/do Слышны голоса, поиск продолжается")
+    SendText("/do Слышны голоса, поиск продолжается (da da da)")
     Send("{Enter}")
 
     ToolTip("Готово!")
@@ -1947,7 +1947,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me докладывает о завершении этапа работ")
+    SendText("/me докладывает о завершении этапа работ (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1957,7 +1957,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/do Этап завершён, приступаю к следующему")
+    SendText("/do Этап завершён, приступаю к следующему (da da da)")
     Send("{Enter}")
 
     ToolTip("Готово!")
@@ -1983,7 +1983,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me уточняет время прибытия подкрепления")
+    SendText("/me уточняет время прибытия подкрепления (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1993,7 +1993,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/do Подкрепление прибудет через 5 минут")
+    SendText("/do Подкрепление прибудет через 5 минут (da da da)")
     Send("{Enter}")
 
     ToolTip("Готово!")
@@ -2019,7 +2019,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me сдаёт отчёт о работе")
+    SendText("/me сдаёт отчёт о работе (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -2029,7 +2029,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/do Отчёт принят, замечаний нет")
+    SendText("/do Отчёт принят, замечаний нет (da da da)")
     Send("{Enter}")
 
     ToolTip("Готово!")
@@ -2055,7 +2055,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me объявляет отбой для личного состава")
+    SendText("/me объявляет отбой для личного состава (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -2065,7 +2065,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/do Все расходятся, дежурство продолжается")
+    SendText("/do Все расходятся, дежурство продолжается (da da da)")
     Send("{Enter}")
 
     ToolTip("Готово!")
