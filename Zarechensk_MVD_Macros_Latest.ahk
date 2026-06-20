@@ -681,7 +681,7 @@ F2::
     Sleep(30)
     Send("{. up}")
     PauseWithCheck(300)
-    SendText("-Здравия желаю, " Data.Department " УМВД России по г. Кемерово, " Data.Rank " " Data.LastName " (da da da da da da) " )
+    SendText("-Здравия желаю, " Data.Department " МУ МВД Зареченское, " Data.Rank " " Data.LastName " (da da da da da da) " )
     Send("{Enter}")
     PauseWithCheck(300)
 
