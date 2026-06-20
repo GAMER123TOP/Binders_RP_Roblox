@@ -1383,7 +1383,7 @@ F9::
             if (CurrentWarning = 3) {
                 SendText("-М- " CarColor " " CarModel ", ПРЕДУПРЕЖДЕНИЕ " CurrentWarning "! Остановитесь! Иначе будет открыт огонь по колёсам! (da da da) ")
             } else {
-                SendText("-М- " CarColor " " CarModel ", повторяю, прижимаемся к обочине, " CurrentWarning " законное требование!" (da da da) )
+                SendText("-М- " CarColor " " CarModel ", повторяю, прижимаемся к обочине, " CurrentWarning " законное требование! (da da da)")
             }
             Send("{Enter}")
             PauseWithCheck(300)
