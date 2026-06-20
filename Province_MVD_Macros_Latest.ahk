@@ -586,7 +586,7 @@ F1::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me взял Пистолет Макарова в правую руку (da da da da da da)")
+    SendText("/me взял Пистолет Макарова в правую руку (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -596,7 +596,7 @@ F1::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/do Пистолет разряжен и готов к чистке (da da da da da da)")
+    SendText("/do Пистолет разряжен и готов к чистке (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -606,17 +606,7 @@ F1::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me аккуратно разобрал ПМ и положил детали на полку (da da da da da da)")
-    Send("{Enter}")
-    PauseWithCheck(400)
-
-    Send("{Г down}")
-    Sleep(30)
-    Send("{Г up}")
-    Sleep(50)
-    Send("{Backspace}")
-    PauseWithCheck(300)
-    SendText("/me взял шомпол и прочистил ствол (da da da da da da)")
+    SendText("/me аккуратно разобрал ПМ и положил детали на полку (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -626,17 +616,7 @@ F1::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me смазал затвор маслом из баночки (da da da da da da)")
-    Send("{Enter}")
-    PauseWithCheck(400)
-
-    Send("{Г down}")
-    Sleep(30)
-    Send("{Г up}")
-    Sleep(50)
-    Send("{Backspace}")
-    PauseWithCheck(300)
-    SendText("/do Ствол и затвор полностью обслужены (da da da da da da)")
+    SendText("/me взял шомпол и прочистил ствол (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -646,7 +626,7 @@ F1::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me протёр ПМ сухой тряпочкой (da da da da da da)")
+    SendText("/me смазал затвор маслом из баночки (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -656,7 +636,7 @@ F1::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me собрал ПМ обратно и вставил магазин (da da da da da da)")
+    SendText("/do Ствол и затвор полностью обслужены (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -666,7 +646,27 @@ F1::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/do Пистолет готов к использованию (da da da da da da)")
+    SendText("/me протёр ПМ сухой тряпочкой (da da da)")
+    Send("{Enter}")
+    PauseWithCheck(300)
+
+    Send("{Г down}")
+    Sleep(30)
+    Send("{Г up}")
+    Sleep(50)
+    Send("{Backspace}")
+    PauseWithCheck(300)
+    SendText("/me собрал ПМ обратно и вставил магазин (da da da)")
+    Send("{Enter}")
+    PauseWithCheck(300)
+
+    Send("{Г down}")
+    Sleep(30)
+    Send("{Г up}")
+    Sleep(50)
+    Send("{Backspace}")
+    PauseWithCheck(300)
+    SendText("/do Пистолет готов к использованию (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -724,7 +724,7 @@ F3::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me достал ксиву из кармана рубашки (da da da da da da)")
+    SendText("/me достал ксиву из кармана рубашки (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -734,7 +734,7 @@ F3::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/do Ксива раскрыта и поднята на уровень глаз (da da da da da da)")
+    SendText("/do Ксива раскрыта и поднята на уровень глаз (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -744,17 +744,7 @@ F3::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me задержал ксиву на несколько секунд (da da da da da da)")
-    Send("{Enter}")
-    PauseWithCheck(6000)
-
-    Send("{Г down}")
-    Sleep(30)
-    Send("{Г up}")
-    Sleep(50)
-    Send("{Backspace}")
-    PauseWithCheck(300)
-    SendText("/me свернул ксиву (da da da da da da)")
+    SendText("/me задержал ксиву на несколько секунд (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -764,7 +754,7 @@ F3::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/do Ксива свёрнута (da da da da da da)")
+    SendText("/me свернул ксиву (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -774,7 +764,17 @@ F3::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me убрал ксиву обратно в карман (da da da da da da)")
+    SendText("/do Ксива свёрнута (da da da)")
+    Send("{Enter}")
+    PauseWithCheck(300)
+
+    Send("{Г down}")
+    Sleep(30)
+    Send("{Г up}")
+    Sleep(50)
+    Send("{Backspace}")
+    PauseWithCheck(300)
+    SendText("/me убрал ксиву обратно в карман (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -807,7 +807,7 @@ F4::
         Sleep(50)
         Send("{Backspace}")
         PauseWithCheck(300)
-        SendText("/me резким движением руки снял наручники с тактического пояса (da da da da da da)")
+        SendText("/me достал БРС-2 из кобуры для наручников (da da da)")
         Send("{Enter}")
         PauseWithCheck(300)
 
@@ -817,7 +817,7 @@ F4::
         Sleep(50)
         Send("{Backspace}")
         PauseWithCheck(300)
-        SendText("/me заломил руки задерживаемому за спину и сковал его (da da da da da da)")
+        SendText("/me надел БРС-2 на запястья задержанного (da da da)")
         Send("{Enter}")
         PauseWithCheck(300)
 
@@ -827,7 +827,17 @@ F4::
         Sleep(50)
         Send("{Backspace}")
         PauseWithCheck(300)
-        SendText("/do Задерживаемый скован наручниками за спиной (da da da da da da)")
+        SendText("/do БРС-2 защёлкнуты (da da da)")
+        Send("{Enter}")
+        PauseWithCheck(300)
+
+        Send("{Г down}")
+        Sleep(30)
+        Send("{Г up}")
+        Sleep(50)
+        Send("{Backspace}")
+        PauseWithCheck(300)
+        SendText("/me проверил надёжность фиксации замков (da da da)")
         Send("{Enter}")
         PauseWithCheck(300)
 
@@ -844,7 +854,7 @@ F4::
         Sleep(50)
         Send("{Backspace}")
         PauseWithCheck(300)
-        SendText("/me достал ключ из кармана брюк и вставил в замок наручников (da da da da da da)")
+        SendText("/me достал связку ключей (da da da)")
         Send("{Enter}")
         PauseWithCheck(300)
 
@@ -854,7 +864,7 @@ F4::
         Sleep(50)
         Send("{Backspace}")
         PauseWithCheck(300)
-        SendText("/me повернул ключ, расстегнул наручники и снял их с задержанного (da da da da da da)")
+        SendText("/me вставил ключ в замочную скважину БРС-2 (da da da)")
         Send("{Enter}")
         PauseWithCheck(300)
 
@@ -864,7 +874,7 @@ F4::
         Sleep(50)
         Send("{Backspace}")
         PauseWithCheck(300)
-        SendText("/me повесил наручники обратно на тактический пояс (da da da da da da)")
+        SendText("/do Ключ вставлен в замочную скважину БРС-2 (da da da)")
         Send("{Enter}")
         PauseWithCheck(300)
 
@@ -874,7 +884,27 @@ F4::
         Sleep(50)
         Send("{Backspace}")
         PauseWithCheck(300)
-        SendText("/do Наручники закреплены на поясе (da da da da da da)")
+        SendText("/me отщёлкнул замки и снял наручники (da da da)")
+        Send("{Enter}")
+        PauseWithCheck(300)
+
+        Send("{Г down}")
+        Sleep(30)
+        Send("{Г up}")
+        Sleep(50)
+        Send("{Backspace}")
+        PauseWithCheck(300)
+        SendText("/do БРС-2 сняты (da da da)")
+        Send("{Enter}")
+        PauseWithCheck(300)
+
+        Send("{Г down}")
+        Sleep(30)
+        Send("{Г up}")
+        Sleep(50)
+        Send("{Backspace}")
+        PauseWithCheck(300)
+        SendText("/me убрал БРС-2 обратно в кобуру для наручников (da da da)")
         Send("{Enter}")
         PauseWithCheck(300)
 
@@ -896,7 +926,7 @@ F4::
             Sleep(50)
             Send("{Backspace}")
             PauseWithCheck(300)
-            SendText("/me надел резиновые перчатки, лежащие в кармане (da da da da da da)")
+            SendText("/me надел одноразовые перчатки (da da da)")
             Send("{Enter}")
             PauseWithCheck(300)
 
@@ -906,7 +936,7 @@ F4::
             Sleep(50)
             Send("{Backspace}")
             PauseWithCheck(300)
-            SendText("/me похлопал по карманам и торсу человека напротив (da da da da da da)")
+            SendText("/me провёл рукой по верхней одежде задержанного (da da da)")
             Send("{Enter}")
             PauseWithCheck(300)
 
@@ -916,9 +946,19 @@ F4::
             Sleep(50)
             Send("{Backspace}")
             PauseWithCheck(300)
-            SendText("/do Процесс поверхностного осмотра... (da da da da da da)")
+            SendText("/do Проверка на наличие оружия или опасных предметов (da da da)")
             Send("{Enter}")
-            PauseWithCheck(400)
+            PauseWithCheck(300)
+
+            Send("{Г down}")
+            Sleep(30)
+            Send("{Г up}")
+            Sleep(50)
+            Send("{Backspace}")
+            PauseWithCheck(300)
+            SendText("/do Есть запрещенные предметы? (da da da)")
+            Send("{Enter}")
+            PauseWithCheck(300)
         }
         else if (SearchType = "ЛИЧНЫЙ") {
             Witness := GetWitnessChoice()
@@ -935,22 +975,12 @@ F4::
                 Sleep(50)
                 Send("{Backspace}")
                 PauseWithCheck(300)
-                SendText("/me обратился к понятым, стоящим рядом (da da da da da da)")
-                Send("{Enter}")
-                PauseWithCheck(300)
-
-                Send("{Г down}")
-                Sleep(30)
-                Send("{Г up}")
-                Sleep(50)
-                Send("{Backspace}")
-                PauseWithCheck(300)
-                SendText("- Уважаемые понятые, прошу вас фиксировать процесс личного обыска. (da da da da da da)")
+                SendText("/do Присутствуют понятые, ведётся видеозапись (da da da)")
                 Send("{Enter}")
                 PauseWithCheck(300)
             }
             else {
-                ToolTip("Личный обыск под видеофиксацию...")
+                ToolTip("Личный обыск без понятых...")
                 SetTimer(() => ToolTip(), -1500)
 
                 Send("{Г down}")
@@ -959,17 +989,7 @@ F4::
                 Sleep(50)
                 Send("{Backspace}")
                 PauseWithCheck(300)
-                SendText("/me включил свою нагрудную боди-камеру для фиксации обыска (da da da da da da)")
-                Send("{Enter}")
-                PauseWithCheck(300)
-
-                Send("{Г down}")
-                Sleep(30)
-                Send("{Г up}")
-                Sleep(50)
-                Send("{Backspace}")
-                PauseWithCheck(300)
-                SendText("/do Нагрудная боди-камера ведёт запись в облако (da da da da da da)")
+                SendText("/do Понятые отсутствуют, ведётся видеозапись (da da da)")
                 Send("{Enter}")
                 PauseWithCheck(300)
             }
@@ -980,7 +1000,7 @@ F4::
             Sleep(50)
             Send("{Backspace}")
             PauseWithCheck(300)
-            SendText("/me надел стерильные резиновые перчатки (da da da da da da)")
+            SendText("/me надел одноразовые перчатки (da da da)")
             Send("{Enter}")
             PauseWithCheck(300)
 
@@ -990,7 +1010,7 @@ F4::
             Sleep(50)
             Send("{Backspace}")
             PauseWithCheck(300)
-            SendText("/me начал тщательно проверять внутренние карманы и содержимое одежды (da da da da da da)")
+            SendText("/me начал тщательно проверять внутренние карманы и содержимое одежды (da da da)")
             Send("{Enter}")
             PauseWithCheck(300)
 
@@ -1000,9 +1020,19 @@ F4::
             Sleep(50)
             Send("{Backspace}")
             PauseWithCheck(300)
-            SendText("/do Процесс тщательного обыска... (da da da da da da)")
+            SendText("/do Процесс тщательного обыска... (da da da)")
             Send("{Enter}")
-            PauseWithCheck(500)
+            PauseWithCheck(300)
+
+            Send("{Г down}")
+            Sleep(30)
+            Send("{Г up}")
+            Sleep(50)
+            Send("{Backspace}")
+            PauseWithCheck(300)
+            SendText("/do Есть запрещенные предметы? (da da da)")
+            Send("{Enter}")
+            PauseWithCheck(300)            
         }
 
         Contraband := GetContrabandQuestion()
@@ -1019,7 +1049,7 @@ F4::
             Sleep(50)
             Send("{Backspace}")
             PauseWithCheck(300)
-            SendText("/me обнаружил запрещенные предметы у обыскиваемого (da da da da da da)")
+            SendText("/me обнаружил запрещенные предметы у обыскиваемого (da da da)")
             Send("{Enter}")
             PauseWithCheck(300)
 
@@ -1029,7 +1059,7 @@ F4::
             Sleep(50)
             Send("{Backspace}")
             PauseWithCheck(300)
-            SendText("/me аккуратно изъял запрещенные предметы в количестве " Amount " шт. (da da da da da da)")
+            SendText("/me аккуратно изъял запрещенные предметы в количестве " Amount " шт. (da da da)")
             Send("{Enter}")
             PauseWithCheck(300)
 
@@ -1039,7 +1069,7 @@ F4::
             Sleep(50)
             Send("{Backspace}")
             PauseWithCheck(300)
-            SendText("/me поместил изъятое в специальный зип-пакет (da da da da da da)")
+            SendText("/me поместил изъятое в специальный зип-пакет (da da da)")
             Send("{Enter}")
             PauseWithCheck(300)
 
@@ -1049,7 +1079,7 @@ F4::
             Sleep(50)
             Send("{Backspace}")
             PauseWithCheck(300)
-            SendText("/do Изъятое упаковано в зип-пакет и опечатано (da da da da da da)")
+            SendText("/do Изъятое упаковано в зип-пакет и опечатано (da da da)")
             Send("{Enter}")
             PauseWithCheck(300)
         }
@@ -1060,7 +1090,7 @@ F4::
             Sleep(50)
             Send("{Backspace}")
             PauseWithCheck(300)
-            SendText("/do Ничего запрещенного не обнаружено (da da da da da da)")
+            SendText("/do Ничего запрещенного не обнаружено (da da da)")
             Send("{Enter}")
             PauseWithCheck(300)
         }
@@ -1071,7 +1101,7 @@ F4::
         Sleep(50)
         Send("{Backspace}")
         PauseWithCheck(300)
-        SendText("/me снял резиновые перчатки и утилизировал их (da da da da da da)")
+        SendText("/me снял резиновые перчатки и утилизировал их (da da da)")
         Send("{Enter}")
         PauseWithCheck(300)
 
@@ -1081,7 +1111,7 @@ F4::
         Sleep(50)
         Send("{Backspace}")
         PauseWithCheck(300)
-        SendText("/do Осмотр полностью завершен (da da da da da da)")
+        SendText("/do Осмотр полностью завершен (da da da)")
         Send("{Enter}")
         PauseWithCheck(300)
 
@@ -1113,7 +1143,7 @@ F5::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me снял рацию (da da da da da da)")
+    SendText("/me снял рацию (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1123,7 +1153,7 @@ F5::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me зажал оранжевую кнопку PPT (da da da da da da)")
+    SendText("/me зажал оранжевую кнопку PPT (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1133,7 +1163,7 @@ F5::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/do Из динамика послышался звук включения (da da da da da da)")
+    SendText("/do Из динамика послышался звук включения (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1143,7 +1173,7 @@ F5::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("-Р- " Data.Message " (da da da da da da)")
+    SendText("-Р- " Data.Message " (da da da) ")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1153,7 +1183,7 @@ F5::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me отпустил кнопку и убрал рацию (da da da da da da)")
+    SendText("/me отпустил кнопку и убрал рацию (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1180,9 +1210,9 @@ F6::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("-Вы имеете законное право хранить молчание (da da da da da da)")
+    SendText("-Вы имеете законное право хранить молчание (da da da)")
     Send("{Enter}")
-    PauseWithCheck(400)
+    PauseWithCheck(300)
 
     Send("{Г down}")
     Sleep(30)
@@ -1190,9 +1220,9 @@ F6::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("-Требовать присутствия адвоката (da da da da da da)")
+    SendText("-Требовать присутствия адвоката (da da da)")
     Send("{Enter}")
-    PauseWithCheck(400)
+    PauseWithCheck(300)
 
     Send("{Г down}")
     Sleep(30)
@@ -1200,9 +1230,9 @@ F6::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("-Совершить один звонок (da da da da da da)")
+    SendText("-Совершить один звонок (da da da)")
     Send("{Enter}")
-    PauseWithCheck(400)
+    PauseWithCheck(300)
 
     Send("{Г down}")
     Sleep(30)
@@ -1210,9 +1240,9 @@ F6::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("-Знать причину задержания (da da da da da da)")
+    SendText("-Знать причину задержания (da da da)")
     Send("{Enter}")
-    PauseWithCheck(400)
+    PauseWithCheck(300)
 
     Send("{Г down}")
     Sleep(30)
@@ -1220,9 +1250,9 @@ F6::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("-Получать документы на подпись только после внимательного прочтения (da da da da da da)")
+    SendText("-Получать документы на подпись только после внимательного прочтения (da da da)")
     Send("{Enter}")
-    PauseWithCheck(400)
+    PauseWithCheck(300)
 
     ToolTip("Готово!")
     SetTimer(() => ToolTip(), -1500)
@@ -1255,7 +1285,7 @@ F7::
         Sleep(50)
         Send("{Backspace}")
         PauseWithCheck(300)
-        SendText("/me взял задержанного за запястья и повёл к патрульной машине (da da da da da da)")
+        SendText("/me взял задержанного за запястья и повёл к патрульной машине (da da da)")
         Send("{Enter}")
         PauseWithCheck(300)
 
@@ -1265,7 +1295,7 @@ F7::
         Sleep(50)
         Send("{Backspace}")
         PauseWithCheck(300)
-        SendText("/me усадил задержанного в служебный транспорт (da da da da da da)")
+        SendText("/me усадил задержанного в служебный транспорт (da da da)")
         Send("{Enter}")
         PauseWithCheck(300)
 
@@ -1275,7 +1305,7 @@ F7::
         Sleep(50)
         Send("{Backspace}")
         PauseWithCheck(300)
-        SendText("/me закрыл дверь и направился к водительскому месту (da da da da da da)")
+        SendText("/me закрыл дверь и направился к водительскому месту (da da da)")
         Send("{Enter}")
         PauseWithCheck(300)
     }
@@ -1287,7 +1317,7 @@ F7::
         Sleep(50)
         Send("{Backspace}")
         PauseWithCheck(300)
-        SendText("/me взял задержанного и повёл в сторону дежурной части (da da da da da da)")
+        SendText("/me взял задержанного и повёл в сторону дежурной части (da da da)")
         Send("{Enter}")
         PauseWithCheck(300)
 
@@ -1297,7 +1327,7 @@ F7::
         Sleep(50)
         Send("{Backspace}")
         PauseWithCheck(300)
-        SendText("/me доставил задержанного в ИВС (da da da da da da)")
+        SendText("/me доставил задержанного в ИВС (da da da)")
         Send("{Enter}")
         PauseWithCheck(300)
 
@@ -1307,7 +1337,7 @@ F7::
         Sleep(50)
         Send("{Backspace}")
         PauseWithCheck(300)
-        SendText("/do Задержанный помещён в изолятор временного содержания (da da da da da da)")
+        SendText("/do Задержанный помещён в изолятор временного содержания (da da da)")
         Send("{Enter}")
         PauseWithCheck(300)
     }
@@ -1342,7 +1372,7 @@ F8::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me достал Пистолет Макарова из кобуры (da da da da da da)")
+    SendText("/me достал Пистолет Макарова из кобуры (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1353,7 +1383,7 @@ F8::
         Sleep(50)
         Send("{Backspace}")
         PauseWithCheck(300)
-        SendText("/me снял пустой магазин (da da da da da da)")
+        SendText("/me снял пустой магазин (da da da)")
         Send("{Enter}")
         PauseWithCheck(300)
 
@@ -1363,7 +1393,7 @@ F8::
         Sleep(50)
         Send("{Backspace}")
         PauseWithCheck(300)
-        SendText("/me убрал пустой магазин в карман (da da da da da da)")
+        SendText("/me убрал пустой магазин в карман (da da da)")
         Send("{Enter}")
         PauseWithCheck(300)
 
@@ -1373,7 +1403,7 @@ F8::
         Sleep(50)
         Send("{Backspace}")
         PauseWithCheck(300)
-        SendText("/me достал из кармана полный магазин (da da da da da da)")
+        SendText("/me достал из кармана полный магазин (da da da)")
         Send("{Enter}")
         PauseWithCheck(300)
 
@@ -1383,7 +1413,7 @@ F8::
         Sleep(50)
         Send("{Backspace}")
         PauseWithCheck(300)
-        SendText("/me вставил полный магазин на место старого (da da da da da da)")
+        SendText("/me вставил полный магазин на место старого (da da da)")
         Send("{Enter}")
         PauseWithCheck(300)
     }
@@ -1394,7 +1424,7 @@ F8::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me передёрнул затвор, дослав патрон в патронник (da da da da da da)")
+    SendText("/me передёрнул затвор, дослав патрон в патронник (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1404,7 +1434,7 @@ F8::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/do ПМ готов к применению, оружие в боевом положении (da da da da da da)")
+    SendText("/do ПМ готов к применению, оружие в боевом положении (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1439,7 +1469,7 @@ F9::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me достал мегафон и поднёс ко рту (da da da da da da)")
+    SendText("/me достал мегафон и поднёс ко рту (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1449,7 +1479,7 @@ F9::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/do Из мегафона послышался усиленный голос (da da da da da da)")
+    SendText("/do Из мегафона послышался усиленный голос (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1459,7 +1489,7 @@ F9::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("-М- " CarColor " " CarModel ", прижимаемся к обочине, 1 законное требование! (da da da da da da)")
+    SendText("-М- " CarColor " " CarModel ", прижимаемся к обочине, 1 законное требование! (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1479,9 +1509,9 @@ F9::
             PauseWithCheck(300)
             
             if (CurrentWarning = 3) {
-                SendText("-М- " CarColor " " CarModel ", ПРЕДУПРЕЖДЕНИЕ " CurrentWarning "! Остановитесь! Иначе будет открыт огонь по колёсам! (da da da da da da)")
+                SendText("-М- " CarColor " " CarModel ", ПРЕДУПРЕЖДЕНИЕ " CurrentWarning "! Остановитесь! Иначе будет открыт огонь по колёсам! (da da da)")
             } else {
-                SendText("-М- " CarColor " " CarModel ", повторяю, прижимаемся к обочине, " CurrentWarning " законное требование! (da da da da da da)")
+                SendText("-М- " CarColor " " CarModel ", повторяю, прижимаемся к обочине, " CurrentWarning " законное требование! (da da da)")
             }
             Send("{Enter}")
             PauseWithCheck(300)
@@ -1494,7 +1524,7 @@ F9::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me убрал мегафон (da da da da da da)")
+    SendText("/me убрал мегафон (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1526,7 +1556,7 @@ F10::
         Sleep(50)
         Send("{Backspace}")
         PauseWithCheck(300)
-        SendText("/me провёл профилактическую беседу с водителем (da da da da da da)")
+        SendText("/me провёл профилактическую беседу с водителем (da da da)")
         Send("{Enter}")
         PauseWithCheck(300)
         Send("{Г down}")
@@ -1535,7 +1565,7 @@ F10::
         Sleep(50)
         Send("{Backspace}")
         PauseWithCheck(300)
-        SendText("-Гражданин, вы нарушаете ПДД. В следующий раз будет выписан штраф. Счастливого пути. (da da da da da da)")
+        SendText("-Гражданин, вы нарушаете ПДД, в следующий раз будет выписан штраф, честь имею. (da da da)")
         Send("{Enter}")
         PauseWithCheck(300)
         Send("{Г down}")
@@ -1544,7 +1574,7 @@ F10::
         Sleep(50)
         Send("{Backspace}")
         PauseWithCheck(300)
-        SendText("/me отдал все документы обратно (da da da da da da)")
+        SendText("/me отдал все документы обратно (da da da)")
         Send("{Enter}")
         return
     }
@@ -1567,7 +1597,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me сверил марку и модель авто: " CarModel " (da da da da da da)")
+    SendText("/me сверил марку и модель авто: " CarModel " (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1577,7 +1607,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me сверил госномер авто: " PlateNumber " (da da da da da da)")
+    SendText("/me сверил госномер авто: " PlateNumber " (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1587,7 +1617,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me включил КПК и открыл базу данных (da da da da da da)")
+    SendText("/me включил КПК и открыл базу данных (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1597,7 +1627,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/do Выполняется проверка гражданина... (da da da da da da)")
+    SendText("/do Выполняется проверка гражданина... (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1607,7 +1637,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/do Выполняется проверка транспортного средства... (da da da da da da)")
+    SendText("/do Выполняется проверка транспортного средства... (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1617,7 +1647,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/do Нарушение, статья: " Article ", сумма: " Amount " руб. (da da da da da da)")
+    SendText("/do Нарушение, статья: " Article ", сумма: " Amount " руб. (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1627,7 +1657,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/do Электронные данные успешно сохранены в системе (da da da da da da)")
+    SendText("/do Электронные данные успешно сохранены в системе (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1637,7 +1667,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me составил " DocText " по факту административного нарушения (da da da da da da)")
+    SendText("/me составил " DocText " по факту административного нарушения (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1647,7 +1677,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/do Водитель поставил подпись о получении копии на планшете (da da da da da da)")
+    SendText("/do Водитель поставил подпись о получении копии на планшете (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1657,7 +1687,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me вернул бланки и документы обратно водителю (da da da da da da)")
+    SendText("/me вернул бланки и документы обратно водителю (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1667,7 +1697,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/do Общий установленный срок для оплаты: 60 дней (da da da da da da)")
+    SendText("/do Общий установленный срок для оплаты: 60 дней (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1677,7 +1707,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("-Штраф оплатите в банке. Сумма: " Amount " руб. (da da da da da da)")
+    SendText("-Штраф оплатите в банке, сумма: " Amount " руб (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1687,7 +1717,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me заблокировал и убрал КПК (da da da da da da)")
+    SendText("/me заблокировал и убрал КПК (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1722,7 +1752,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me прибыл на место происшествия (da da da da da da)")
+    SendText("/me прибыл на место происшествия (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1732,7 +1762,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/do Автомобиль " CarColor " " CarModel " (" PlateNumber ") (da da da da da da)")
+    SendText("/do Автомобиль " CarColor " " CarModel " (" PlateNumber ") (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1742,7 +1772,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/do Основание для вытаскивания? (da da da da da da)")
+    SendText("/do Основание для вытаскивания? (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1760,7 +1790,7 @@ F10::
         Sleep(50)
         Send("{Backspace}")
         PauseWithCheck(300)
-        SendText("/do Водитель отказался подчиниться законному требованию (da da da da da da)")
+        SendText("/do Водитель отказался подчиниться законному требованию (da da da)")
         Send("{Enter}")
         PauseWithCheck(300)
     } else if (Reason = "РОЗЫСК/УГОН") {
@@ -1770,7 +1800,7 @@ F10::
         Sleep(50)
         Send("{Backspace}")
         PauseWithCheck(300)
-        SendText("/do Автомобиль находится в розыске / есть подозрение на угон (da da da da da da)")
+        SendText("/do Автомобиль находится в розыске / есть подозрение на угон (da da da)")
         Send("{Enter}")
         PauseWithCheck(300)
     } else if (Reason = "ОПАСНОСТЬ") {
@@ -1780,7 +1810,7 @@ F10::
         Sleep(50)
         Send("{Backspace}")
         PauseWithCheck(300)
-        SendText("/do Водитель ведёт себя неадекватно, есть угроза для окружающих (da da da da da da)")
+        SendText("/do Водитель ведёт себя неадекватно, есть угроза для окружающих (da da da)")
         Send("{Enter}")
         PauseWithCheck(300)
     } else if (Reason = "СПАСЕНИЕ") {
@@ -1790,7 +1820,7 @@ F10::
         Sleep(50)
         Send("{Backspace}")
         PauseWithCheck(300)
-        SendText("/do Водитель нуждается в срочной помощи / есть угроза жизни (da da da da da da)")
+        SendText("/do Водитель нуждается в срочной помощи / есть угроза жизни (da da da)")
         Send("{Enter}")
         PauseWithCheck(300)
     }
@@ -1801,7 +1831,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/do Дверь не заблокирована? (da da da da da da)")
+    SendText("/do Дверь не заблокирована? (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1819,7 +1849,7 @@ F10::
         Sleep(50)
         Send("{Backspace}")
         PauseWithCheck(300)
-        SendText("/me достал резиновую дубинку (da da da da da da)")
+        SendText("/me достал резиновую дубинку (da da da)")
         Send("{Enter}")
         PauseWithCheck(300)
 
@@ -1829,7 +1859,7 @@ F10::
         Sleep(50)
         Send("{Backspace}")
         PauseWithCheck(300)
-        SendText("/me разбил боковое стекло (da da da da da da)")
+        SendText("/me разбил боковое стекло (da da da)")
         Send("{Enter}")
         PauseWithCheck(300)
 
@@ -1839,7 +1869,7 @@ F10::
         Sleep(50)
         Send("{Backspace}")
         PauseWithCheck(300)
-        SendText("/do Стекло разбито, осколки осыпались (da da da da da da)")
+        SendText("/do Стекло разбито, осколки осыпались (da da da)")
         Send("{Enter}")
         PauseWithCheck(300)
 
@@ -1849,7 +1879,7 @@ F10::
         Sleep(50)
         Send("{Backspace}")
         PauseWithCheck(300)
-        SendText("/me открыл дверь через разбитое окно (da da da da da da)")
+        SendText("/me открыл дверь через разбитое окно (da da da)")
         Send("{Enter}")
         PauseWithCheck(300)
     } else {
@@ -1859,7 +1889,7 @@ F10::
         Sleep(50)
         Send("{Backspace}")
         PauseWithCheck(300)
-        SendText("/me открыл дверь (da da da da da da)")
+        SendText("/me открыл дверь (da da da)")
         Send("{Enter}")
         PauseWithCheck(300)
 
@@ -1869,7 +1899,7 @@ F10::
         Sleep(50)
         Send("{Backspace}")
         PauseWithCheck(300)
-        SendText("/do Дверь открыта (da da da da da da)")
+        SendText("/do Дверь открыта (da da da)")
         Send("{Enter}")
         PauseWithCheck(300)
     }
@@ -1880,7 +1910,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me взял водителя за плечо (da da da da da da)")
+    SendText("/me взял водителя за плечо (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1890,7 +1920,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me аккуратно вытащил водителя из машины (da da da da da da)")
+    SendText("/me аккуратно вытащил водителя из машины (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1900,7 +1930,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/do Водитель извлечён из автомобиля (da da da da da da)")
+    SendText("/do Водитель извлечён из автомобиля (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1910,7 +1940,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/do Водитель на осмотре, признаков опьянения не выявлено (da da da da da da)")
+    SendText("/do Водитель на осмотре, признаков опьянения не выявлено (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1955,7 +1985,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me включил аварийную сигнализацию (da da da da da da)")
+    SendText("/me включил аварийную сигнализацию (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1965,7 +1995,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me выставил знак аварийной остановки (da da da da da da)")
+    SendText("/me выставил знак аварийной остановки (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1975,7 +2005,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me проверил наличие пострадавших: " Injured " (da da da da da da)")
+    SendText("/me проверил наличие пострадавших: " Injured " (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1986,7 +2016,7 @@ F10::
         Sleep(50)
         Send("{Backspace}")
         PauseWithCheck(300)
-        SendText("/me вызвал скорую помощь (da da da da da da)")
+        SendText("/me вызвал скорую помощь (da da da)")
         Send("{Enter}")
         PauseWithCheck(300)
     }
@@ -1997,7 +2027,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me зафиксировал обстановку на фото и видео (da da da da da da)")
+    SendText("/me зафиксировал обстановку на фото и видео (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -2007,7 +2037,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/do Место ДТП: " Location " (da da da da da da)")
+    SendText("/do Место ДТП: " Location " (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -2017,7 +2047,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me проверил документы участников (da da da da da da)")
+    SendText("/me проверил документы участников (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -2028,7 +2058,7 @@ F10::
         Sleep(50)
         Send("{Backspace}")
         PauseWithCheck(300)
-        SendText("/do У водителя " Driver1 " отсутствует полис ОСАГО (da da da da da da)")
+        SendText("/do У водителя " Driver1 " отсутствует полис ОСАГО (da da da)")
         Send("{Enter}")
         PauseWithCheck(300)
     }
@@ -2039,7 +2069,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me составил схему ДТП (da da da da da da)")
+    SendText("/me составил схему ДТП (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -2049,7 +2079,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/do Повреждения: " Damage " (da da da da da da)")
+    SendText("/do Повреждения: " Damage " (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -2060,7 +2090,7 @@ F10::
         Sleep(50)
         Send("{Backspace}")
         PauseWithCheck(300)
-        SendText("/me составил постановление об административном правонарушении (da da da da da da)")
+        SendText("/me составил постановление об административном правонарушении (da da da)")
         Send("{Enter}")
         PauseWithCheck(300)
     } else {
@@ -2070,7 +2100,7 @@ F10::
         Sleep(50)
         Send("{Backspace}")
         PauseWithCheck(300)
-        SendText("/me составил протокол об административном правонарушении (da da da da da da)")
+        SendText("/me составил протокол об административном правонарушении (da da da)")
         Send("{Enter}")
         PauseWithCheck(300)
 
@@ -2080,7 +2110,7 @@ F10::
         Sleep(50)
         Send("{Backspace}")
         PauseWithCheck(300)
-        SendText("/do Дело будет направлено на разбор в суд (da da da da da da)")
+        SendText("/do Дело будет направлено на разбор в суд (da da da)")
         Send("{Enter}")
         PauseWithCheck(300)
     }
@@ -2091,7 +2121,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me участники внимательно прочитали документы (da da da da da da)")
+    SendText("/me участники внимательно прочитали документы (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -2101,7 +2131,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me участники поставили подписи (da da da da da da)")
+    SendText("/me участники поставили подписи (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -2111,7 +2141,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/me вручил копии документов участникам (da da da da da da)")
+    SendText("/me вручил копии документов участникам (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -2121,7 +2151,7 @@ F10::
     Sleep(50)
     Send("{Backspace}")
     PauseWithCheck(300)
-    SendText("/do ДТП оформлено (da da da da da da)")
+    SendText("/do ДТП оформлено (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
