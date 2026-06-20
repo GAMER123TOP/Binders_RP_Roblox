@@ -338,7 +338,7 @@ GetMegaphoneInput() {
     MyGui := Gui("+AlwaysOnTop")
     MyGui.Title := "Мегафон"
     MyGui.SetFont("s9")
-    MyGui.Add("Text",, "Марка и модель машины (например: BMW X5):")
+    MyGui.Add("Text",, "Марка и модель машины:")
     MyGui.Add("Edit", "vCarModel w250")
     MyGui.Add("Text",, "Цвет машины:")
     MyGui.Add("Edit", "vCarColor w250")
@@ -495,11 +495,11 @@ GetAccidentInput() {
     MyGui := Gui("+AlwaysOnTop")
     MyGui.Title := "Данные авто"
     MyGui.SetFont("s9")
-    MyGui.Add("Text",, "Марка и модель машины (например: BMW X5):")
+    MyGui.Add("Text",, "Марка и модель машины:")
     MyGui.Add("Edit", "vCarModel w250")
     MyGui.Add("Text",, "Цвет машины:")
     MyGui.Add("Edit", "vCarColor w250")
-    MyGui.Add("Text",, "Государственный номер (например: А123ВС):")
+    MyGui.Add("Text",, "Государственный номер:")
     MyGui.Add("Edit", "vPlateNumber w250")
     
     MyGui.Add("Button", "Default w100 y+10 x10", "ОК").OnEvent("Click", (*) => MyGui.Hide())
@@ -681,7 +681,7 @@ F2::
     Sleep(30)
     Send("{. up}")
     PauseWithCheck(300)
-    SendText("-Здравия желаю, " Data.Department " МУ МВД Зареченское, " Data.Rank " " Data.LastName " (da da da da da da) " )
+    SendText("-Здравия желаю, " Data.Department " УМВД России по г. Кемерово, " Data.Rank " " Data.LastName " (da da da da da da) " )
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -778,7 +778,7 @@ F4::
         Sleep(30)
         Send("{. up}")
         PauseWithCheck(300)
-        SendText("/me резким движением руки снял наручники с тактического пояса")
+        SendText("/me достал БРС-2 из кобуры для наручников")
         Send("{Enter}")
         PauseWithCheck(300)
 
@@ -786,7 +786,7 @@ F4::
         Sleep(30)
         Send("{. up}")
         PauseWithCheck(300)
-        SendText("/me заломил руки задерживаемому за спину и сковал его")
+        SendText("/me надел БРС-2 на запястья задержанного")
         Send("{Enter}")
         PauseWithCheck(300)
 
@@ -794,7 +794,15 @@ F4::
         Sleep(30)
         Send("{. up}")
         PauseWithCheck(300)
-        SendText("/do Задерживаемый скован наручниками за спиной")
+        SendText("/do БРС-2 защёлкнуты")
+        Send("{Enter}")
+        PauseWithCheck(300)
+
+        Send("{. down}")
+        Sleep(30)
+        Send("{. up}")
+        PauseWithCheck(300)
+        SendText("/me проверил надёжность фиксации замков")
         Send("{Enter}")
         PauseWithCheck(300)
 
@@ -809,7 +817,7 @@ F4::
         Sleep(30)
         Send("{. up}")
         PauseWithCheck(300)
-        SendText("/me достал ключ из кармана брюк и вставил в замок наручников")
+        SendText("/me достал связку ключей")
         Send("{Enter}")
         PauseWithCheck(300)
 
@@ -817,7 +825,7 @@ F4::
         Sleep(30)
         Send("{. up}")
         PauseWithCheck(300)
-        SendText("/me повернул ключ, расстегнул наручники и снял их с задержанного")
+        SendText("/me вставил ключ в замочную скважину БРС-2")
         Send("{Enter}")
         PauseWithCheck(300)
 
@@ -825,7 +833,7 @@ F4::
         Sleep(30)
         Send("{. up}")
         PauseWithCheck(300)
-        SendText("/me повесил наручники обратно на тактический пояс")
+        SendText("/do Ключ вставлен в замочную скважину БРС-2")
         Send("{Enter}")
         PauseWithCheck(300)
 
@@ -833,7 +841,23 @@ F4::
         Sleep(30)
         Send("{. up}")
         PauseWithCheck(300)
-        SendText("/do Наручники закреплены на поясе")
+        SendText("/me отщёлкнул замки и снял наручники")
+        Send("{Enter}")
+        PauseWithCheck(300)
+
+        Send("{. down}")
+        Sleep(30)
+        Send("{. up}")
+        PauseWithCheck(300)
+        SendText("/do БРС-2 сняты")
+        Send("{Enter}")
+        PauseWithCheck(300)
+
+        Send("{. down}")
+        Sleep(30)
+        Send("{. up}")
+        PauseWithCheck(300)
+        SendText("/me убрал БРС-2 обратно в кобуру для наручников")
         Send("{Enter}")
         PauseWithCheck(300)
 
@@ -854,7 +878,7 @@ F4::
             Sleep(30)
             Send("{. up}")
             PauseWithCheck(300)
-            SendText("/me надел резиновые перчатки, лежащие в кармане")
+            SendText("/me надел одноразовые перчатки")
             Send("{Enter}")
             PauseWithCheck(300)
 
@@ -862,7 +886,7 @@ F4::
             Sleep(30)
             Send("{. up}")
             PauseWithCheck(300)
-            SendText("/me похлопал по карманам и торсу человека напротив")
+            SendText("/me провёл рукой по верхней одежде задержанного")
             Send("{Enter}")
             PauseWithCheck(300)
 
@@ -870,9 +894,17 @@ F4::
             Sleep(30)
             Send("{. up}")
             PauseWithCheck(300)
-            SendText("/do Процесс поверхностного осмотра...")
+            SendText("/do Проверка на наличие оружия или опасных предметов")
             Send("{Enter}")
-            PauseWithCheck(400)
+            PauseWithCheck(300)
+
+            Send("{. down}")
+            Sleep(30)
+            Send("{. up}")
+            PauseWithCheck(300)
+            SendText("/do Есть запрещенные предметы?")
+            Send("{Enter}")
+            PauseWithCheck(300)
         }
         else if (SearchType = "ЛИЧНЫЙ") {
             ; Выбор понятых
@@ -888,35 +920,19 @@ F4::
                 Sleep(30)
                 Send("{. up}")
                 PauseWithCheck(300)
-                SendText("/me обратился к понятым, стоящим рядом")
-                Send("{Enter}")
-                PauseWithCheck(300)
-
-                Send("{. down}")
-                Sleep(30)
-                Send("{. up}")
-                PauseWithCheck(300)
-                SendText("- Уважаемые понятые, прошу вас фиксировать процесс личного обыска.")
+                SendText("/do Присутствуют понятые, ведётся видеозапись")
                 Send("{Enter}")
                 PauseWithCheck(300)
             }
             else {
-                ToolTip("Личный обыск под видеофиксацию...")
+                ToolTip("Личный обыск без понятых...")
                 SetTimer(() => ToolTip(), -1500)
 
                 Send("{. down}")
                 Sleep(30)
                 Send("{. up}")
                 PauseWithCheck(300)
-                SendText("/me включил свою нагрудную боди-камеру для фиксации обыска")
-                Send("{Enter}")
-                PauseWithCheck(300)
-
-                Send("{. down}")
-                Sleep(30)
-                Send("{. up}")
-                PauseWithCheck(300)
-                SendText("/do Нагрудная боди-камера ведёт запись в облако")
+                SendText("/do Понятые отсутствуют, ведётся видеозапись")
                 Send("{Enter}")
                 PauseWithCheck(300)
             }
@@ -925,7 +941,7 @@ F4::
             Sleep(30)
             Send("{. up}")
             PauseWithCheck(300)
-            SendText("/me надел стерильные резиновые перчатки")
+            SendText("/me надел одноразовые перчатки")
             Send("{Enter}")
             PauseWithCheck(300)
 
@@ -944,6 +960,14 @@ F4::
             SendText("/do Процесс тщательного обыска...")
             Send("{Enter}")
             PauseWithCheck(500)
+
+            Send("{. down}")
+            Sleep(30)
+            Send("{. up}")
+            PauseWithCheck(300)
+            SendText("/do Есть запрещенные предметы?")
+            Send("{Enter}")
+            PauseWithCheck(300)            
         }
 
         ; Проверка на наличие запрещенки
@@ -1064,7 +1088,7 @@ F5::
     Sleep(30)
     Send("{. up}")
     PauseWithCheck(300)
-    SendText("-Р- " Data.Message)
+    SendText("-Р- " Data.Message " (da da da) ")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1338,7 +1362,7 @@ F9::
     Sleep(30)
     Send("{. up}")
     PauseWithCheck(300)
-    SendText("-М- " CarColor " " CarModel ", прижимаемся к обочине, 1 законное требование!")
+    SendText("-М- " CarColor " " CarModel ", прижимаемся к обочине, 1 законное требование! (da da da) ")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1357,9 +1381,9 @@ F9::
             PauseWithCheck(300)
             
             if (CurrentWarning = 3) {
-                SendText("-М- " CarColor " " CarModel ", ПРЕДУПРЕЖДЕНИЕ " CurrentWarning "! Остановитесь! Иначе будет открыт огонь по колёсам!")
+                SendText("-М- " CarColor " " CarModel ", ПРЕДУПРЕЖДЕНИЕ " CurrentWarning "! Остановитесь! Иначе будет открыт огонь по колёсам! (da da da) ")
             } else {
-                SendText("-М- " CarColor " " CarModel ", повторяю, прижимаемся к обочине, " CurrentWarning " законное требование!")
+                SendText("-М- " CarColor " " CarModel ", повторяю, прижимаемся к обочине, " CurrentWarning " законное требование!" (da da da) )
             }
             Send("{Enter}")
             PauseWithCheck(300)
@@ -1408,7 +1432,7 @@ F10::
         Send("{. down}")
         Sleep(30)
         Send("{. up}")
-        SendText("-Гражданин, вы нарушаете ПДД. В следующий раз будет выписан штраф. Счастливого пути.")
+        SendText("-Гражданин, вы нарушаете ПДД, в следующий раз будет выписан штраф, честь имею.")
         Send("{Enter}")
         PauseWithCheck(300)
         Send("{. down}")
@@ -1476,7 +1500,7 @@ F10::
     Sleep(30)
     Send("{. up}")
     PauseWithCheck(300)
-    SendText("/do Нарушение, статья: " Article ", сумма: " Amount " руб.")
+    SendText("/do Нарушение, статья: " Article ", сумма: " Amount " руб. (da da da) ")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1524,7 +1548,7 @@ F10::
     Sleep(30)
     Send("{. up}")
     PauseWithCheck(300)
-    SendText("-Штраф оплатите в банке. Сумма: " Amount " руб ")
+    SendText("-Штраф оплатите в банке, сумма: " Amount " руб ")
     Send("{Enter}")
     PauseWithCheck(300)
 
@@ -1727,7 +1751,7 @@ F10::
     Sleep(30)
     Send("{. up}")
     PauseWithCheck(300)
-    SendText("/do Водитель на осмотре, признаков опьянения не выявлено")
+    SendText("/do Водитель на осмотре, признаков опьянения не выявлено (da da da) ")
     Send("{Enter}")
     PauseWithCheck(300)
 
