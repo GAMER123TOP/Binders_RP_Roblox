@@ -1,4 +1,4 @@
-﻿#Requires AutoHotkey v2.0
+#Requires AutoHotkey v2.0
 SendMode("Event")
 SetKeyDelay(50, 50)
 
@@ -88,7 +88,13 @@ ShowOverlay() {
     OverlayGui.Add("Text",, "  Numpad6 / F6  → Миранда")
     OverlayGui.Add("Text",, "  Numpad7 / F7  → Вести к машине / ИВС")
     OverlayGui.Add("Text",, "  Numpad8 / F8  → ПМ в боевое")
-    OverlayGui.Add("Text",, "  Numpad9 / F9 → Вытаскивание из машины")
+    OverlayGui.Add("Text",, "  Numpad9 / F9  → Вытаскивание из машины")
+    OverlayGui.Add("Text",, "  Numpad0 / F10 → Получение Дозора")
+    OverlayGui.Add("Text",, "  Ctrl+Numpad1 / Ctrl+F1 → Включение записи")
+    OverlayGui.Add("Text",, "  Ctrl+Numpad2 / Ctrl+F2 → Проверка заряда")
+    OverlayGui.Add("Text",, "  Ctrl+Numpad3 / Ctrl+F3 → Технический сбой")
+    OverlayGui.Add("Text",, "  Ctrl+Numpad4 / Ctrl+F4 → Окончание записи")
+    OverlayGui.Add("Text",, "  Ctrl+Numpad5 / Ctrl+F5 → Сдача Дозора")
     OverlayGui.Add("Text",, "═══════════════════════════════════════")
     OverlayGui.SetFont("s8 w300", "Montserrat Light")  ; Light для подсказок
     OverlayGui.Add("Text",, "  Ctrl+Esc → Остановка")
@@ -1258,7 +1264,7 @@ F8::
     SetTimer(() => ToolTip(), -1500)
 }
 
-; ===== ВЫТАСКИВАНИЕ ИЗ МАШИНЫ (Ctrl+Numpad1) =====
+; ===== 9. ВЫТАСКИВАНИЕ ИЗ МАШИНЫ (Numpad9) =====
 Numpad9::
 F9::
 {
@@ -1433,11 +1439,265 @@ F9::
     Send("{Enter}")
     PauseWithCheck(300)
 
+    ToolTip("Готово!")
+    SetTimer(() => ToolTip(), -1500)
+}
+
+; ===== 10. ПОЛУЧЕНИЕ ДОЗОРА (Numpad0) =====
+Numpad0::
+F10::
+{
+    global StopMacro
+    if StopMacro {
+        ToolTip("Макрос остановлен!")
+        SetTimer(() => ToolTip(), -1500)
+        return
+    }
+    ToolTip("Получение Дозора...")
+    SetTimer(() => ToolTip(), -1500)
+
     Send("{. down}")
     Sleep(30)
     Send("{. up}")
     PauseWithCheck(300)
-    SendText("/do Водитель на осмотре, признаков опьянения не выявлено (da da da) ")
+    SendText("/me взял с зарядной станции закреплённый за ним «Дозор-77» (da da da)")
+    Send("{Enter}")
+    PauseWithCheck(300)
+
+    Send("{. down}")
+    Sleep(30)
+    Send("{. up}")
+    PauseWithCheck(300)
+    SendText("/do Устройство заряжено на 100%, готово к работе")
+    Send("{Enter}")
+    PauseWithCheck(300)
+
+    Send("{. down}")
+    Sleep(30)
+    Send("{. up}")
+    PauseWithCheck(300)
+    SendText("/me проверил целостность корпуса и работу линзы")
+    Send("{Enter}")
+    PauseWithCheck(300)
+
+    Send("{. down}")
+    Sleep(30)
+    Send("{. up}")
+    PauseWithCheck(300)
+    SendText("/do Дата и время синхронизированы, устройство готово к использованию")
+    Send("{Enter}")
+    PauseWithCheck(300)
+
+    ToolTip("Готово!")
+    SetTimer(() => ToolTip(), -1500)
+}
+
+; ===== 11. ВЛЮЧЕНИЕ ЗАПИСИ (Ctrl+Numpad1) =====
+^Numpad1::
+^F1::
+{
+    global StopMacro
+    if StopMacro {
+        ToolTip("Макрос остановлен!")
+        SetTimer(() => ToolTip(), -1500)
+        return
+    }
+    ToolTip("Включение записи...")
+    SetTimer(() => ToolTip(), -1500)
+
+    Send("{. down}")
+    Sleep(30)
+    Send("{. up}")
+    PauseWithCheck(300)
+    SendText("/me нажал кнопку включения на устройстве")
+    Send("{Enter}")
+    PauseWithCheck(300)
+
+    Send("{. down}")
+    Sleep(30)
+    Send("{. up}")
+    PauseWithCheck(300)
+    SendText("/do На экране загорелся красный индикатор записи")
+    Send("{Enter}")
+    PauseWithCheck(300)
+
+    Send("{. down}")
+    Sleep(30)
+    Send("{. up}")
+    PauseWithCheck(300)
+    SendText("/do Ведётся непрерывная аудио- и видеозапись")
+    Send("{Enter}")
+    PauseWithCheck(300)
+
+    ToolTip("Готово!")
+    SetTimer(() => ToolTip(), -1500)
+}
+
+; ===== 12. ПРОВЕРКА ЗАРЯДА (Ctrl+Numpad2) =====
+^Numpad2::
+^F2::
+{
+    global StopMacro
+    if StopMacro {
+        ToolTip("Макрос остановлен!")
+        SetTimer(() => ToolTip(), -1500)
+        return
+    }
+    ToolTip("Проверка заряда...")
+    SetTimer(() => ToolTip(), -1500)
+
+    Send("{. down}")
+    Sleep(30)
+    Send("{. up}")
+    PauseWithCheck(300)
+    SendText("/me проверил светодиодные индикаторы на устройстве")
+    Send("{Enter}")
+    PauseWithCheck(300)
+
+    Send("{. down}")
+    Sleep(30)
+    Send("{. up}")
+    PauseWithCheck(300)
+    SendText("/do Индикатор записи горит, заряд 95%")
+    Send("{Enter}")
+    PauseWithCheck(300)
+
+    ToolTip("Готово!")
+    SetTimer(() => ToolTip(), -1500)
+}
+
+; ===== 13. ТЕХНИЧЕСКИЙ СБОЙ (Ctrl+Numpad3) =====
+^Numpad3::
+^F3::
+{
+    global StopMacro
+    if StopMacro {
+        ToolTip("Макрос остановлен!")
+        SetTimer(() => ToolTip(), -1500)
+        return
+    }
+    ToolTip("Технический сбой...")
+    SetTimer(() => ToolTip(), -1500)
+
+    Send("{. down}")
+    Sleep(30)
+    Send("{. up}")
+    PauseWithCheck(300)
+    SendText("/me заметил неисправность на индикаторе устройства")
+    Send("{Enter}")
+    PauseWithCheck(300)
+
+    Send("{. down}")
+    Sleep(30)
+    Send("{. up}")
+    PauseWithCheck(300)
+    SendText("/do Устройство зависло, запись не ведётся")
+    Send("{Enter}")
+    PauseWithCheck(300)
+
+    Send("{. down}")
+    Sleep(30)
+    Send("{. up}")
+    PauseWithCheck(300)
+    SendText("/me доложил о поломке дежурному")
+    Send("{Enter}")
+    PauseWithCheck(300)
+
+    ToolTip("Готово!")
+    SetTimer(() => ToolTip(), -1500)
+}
+
+; ===== 14. ОКОНЧАНИЕ ЗАПИСИ (Ctrl+Numpad4) =====
+^Numpad4::
+^F4::
+{
+    global StopMacro
+    if StopMacro {
+        ToolTip("Макрос остановлен!")
+        SetTimer(() => ToolTip(), -1500)
+        return
+    }
+    ToolTip("Окончание записи...")
+    SetTimer(() => ToolTip(), -1500)
+
+    Send("{. down}")
+    Sleep(30)
+    Send("{. up}")
+    PauseWithCheck(300)
+    SendText("/me нажал кнопку остановки записи на устройстве")
+    Send("{Enter}")
+    PauseWithCheck(300)
+
+    Send("{. down}")
+    Sleep(30)
+    Send("{. up}")
+    PauseWithCheck(300)
+    SendText("/do Запись остановлена, файл сохранён на карту памяти")
+    Send("{Enter}")
+    PauseWithCheck(300)
+
+    ToolTip("Готово!")
+    SetTimer(() => ToolTip(), -1500)
+}
+
+; ===== 15. СДАЧА ДОЗОРА (Ctrl+Numpad5) =====
+^Numpad5::
+^F5::
+{
+    global StopMacro
+    if StopMacro {
+        ToolTip("Макрос остановлен!")
+        SetTimer(() => ToolTip(), -1500)
+        return
+    }
+    ToolTip("Сдача Дозора...")
+    SetTimer(() => ToolTip(), -1500)
+
+    Send("{. down}")
+    Sleep(30)
+    Send("{. up}")
+    PauseWithCheck(300)
+    SendText("/me установил устройство на зарядную станцию")
+    Send("{Enter}")
+    PauseWithCheck(300)
+
+    Send("{. down}")
+    Sleep(30)
+    Send("{. up}")
+    PauseWithCheck(300)
+    SendText("/do Терминал начал автоматическое скачивание файлов")
+    Send("{Enter}")
+    PauseWithCheck(300)
+
+    Send("{. down}")
+    Sleep(30)
+    Send("{. up}")
+    PauseWithCheck(300)
+    SendText("/do Аккумулятор заряжается, файлы архивируются на сервер")
+    Send("{Enter}")
+    PauseWithCheck(300)
+
+    Send("{. down}")
+    Sleep(30)
+    Send("{. up}")
+    PauseWithCheck(300)
+    SendText("/me поставил отметку в журнале учёта о возврате устройства")
+    Send("{Enter}")
+    PauseWithCheck(300)
+
+    Send("{. down}")
+    Sleep(30)
+    Send("{. up}")
+    PauseWithCheck(300)
+    SendText("/do Дежурный подтвердил сдачу исправного устройства")
+    Send("{Enter}")
+    PauseWithCheck(300)
+
+    Send("{. down}")
+    Sleep(30)
+    Send("{. up}")
+    PauseWithCheck(300)
+    SendText("/do Видеозаписи хранятся на сервере")
     Send("{Enter}")
     PauseWithCheck(300)
 
