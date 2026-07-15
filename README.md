@@ -3,7 +3,7 @@
 AutoHotkey скрипты для упрощения РП-отыгровок в Roblox.
 
 [![Скачать лаунчер](https://img.shields.io/badge/Скачать_лаунчер-Releases-2ea44f)](https://github.com/GAMER123TOP/Binders_RP_Roblox/releases/latest)
-![Version](https://img.shields.io/badge/version-2.1-blue)
+![Version](https://img.shields.io/badge/version-2.4-blue)
 ![Platform](https://img.shields.io/badge/platform-Windows-0078D6)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
