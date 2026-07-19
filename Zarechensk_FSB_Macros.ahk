@@ -6,10 +6,6 @@ SetKeyDelay(50, 50)
 global StopMacro := false
 global LoadedFonts := []
 
-if (A_Args.Length == 0 || A_Args[1] != "FromLauncher") {
-    MsgBox("Ошибка: Запуск макроса разрешен только через Лаунчер!", "Отказ в доступе", "IconX")
-    ExitApp()
-}
 
 ; ===== ПУТЬ К ПАПКЕ ASSETS =====
 global AssetsPath := "C:\Users\" A_UserName "\Binders\assets\"
@@ -184,9 +180,19 @@ GetReloadChoice() {
     MyGui.SetFont("s9 w400", "Montserrat")
     MyGui.Title := "Перезарядка ТТ-33"
     MyGui.Add("Text",, "Нужна перезарядка ТТ-33?")
+    
     Choice := ""
-    YesClick(*) { Choice := "ДА" ; MyGui.Hide() }
-    NoClick(*) { Choice := "НЕТ" ; MyGui.Hide() }
+    
+    YesClick(*) {
+        Choice := "ДА"
+        MyGui.Hide()
+    }
+    
+    NoClick(*) {
+        Choice := "НЕТ"
+        MyGui.Hide()
+    }
+    
     MyGui.Add("Button", "Default w70 x10 y+10", "ДА").OnEvent("Click", YesClick)
     MyGui.Add("Button", "x+10 w70", "НЕТ").OnEvent("Click", NoClick)
     MyGui.Show()
@@ -195,15 +201,24 @@ GetReloadChoice() {
     return Choice
 }
 
-; ===== GUI: ВЫБОР ПЕРЕЗАРЯДКИ АС «ВАЛ» =====
 GetReloadChoiceVAL() {
     MyGui := Gui("+AlwaysOnTop")
     MyGui.SetFont("s9 w400", "Montserrat")
     MyGui.Title := "Перезарядка АС «Вал»"
     MyGui.Add("Text",, "Нужна перезарядка АС «Вал»?")
+    
     Choice := ""
-    YesClick(*) { Choice := "ДА" ; MyGui.Hide() }
-    NoClick(*) { Choice := "НЕТ" ; MyGui.Hide() }
+    
+    YesClick(*) {
+        Choice := "ДА"
+        MyGui.Hide()
+    }
+    
+    NoClick(*) {
+        Choice := "НЕТ"
+        MyGui.Hide()
+    }
+    
     MyGui.Add("Button", "Default w70 x10 y+10", "ДА").OnEvent("Click", YesClick)
     MyGui.Add("Button", "x+10 w70", "НЕТ").OnEvent("Click", NoClick)
     MyGui.Show()
@@ -217,10 +232,24 @@ GetCuffChoice() {
     MyGui.SetFont("s9 w400", "Montserrat")
     MyGui.Title := "Наручники / Обыск"
     MyGui.Add("Text",, "Выберите действие:")
+    
     Choice := ""
-    CuffClick(*) { Choice := "НАДЕТЬ" ; MyGui.Hide() }
-    ReleaseClick(*) { Choice := "СНЯТЬ" ; MyGui.Hide() }
-    SearchClick(*) { Choice := "ОБЫСК" ; MyGui.Hide() }
+    
+    CuffClick(*) {
+        Choice := "НАДЕТЬ"
+        MyGui.Hide()
+    }
+    
+    ReleaseClick(*) {
+        Choice := "СНЯТЬ"
+        MyGui.Hide()
+    }
+    
+    SearchClick(*) {
+        Choice := "ОБЫСК"
+        MyGui.Hide()
+    }
+    
     MyGui.Add("Button", "Default w70 y+10 x10", "НАДЕТЬ").OnEvent("Click", CuffClick)
     MyGui.Add("Button", "x+5 w70", "СНЯТЬ").OnEvent("Click", ReleaseClick)
     MyGui.Add("Button", "x+5 w70", "ОБЫСК").OnEvent("Click", SearchClick)
@@ -260,9 +289,21 @@ GetSearchType() {
     MyGui.Title := "Тип обыска"
     MyGui.Add("Text",, "Какой обыск проводим?")
     Result := {Choice: ""}
-    InfoClick(*) { MyGui.Hide() ; ShowSearchInfo() ; Result.Choice := GetSearchType() }
-    SurfaceClick(*) { Result.Choice := "ПОВЕРХНОСТНЫЙ" ; MyGui.Hide() }
-    PersonalClick(*) { Result.Choice := "ЛИЧНЫЙ" ; MyGui.Hide() }
+    
+    InfoClick(*) {
+        MyGui.Hide()
+        ShowSearchInfo()
+        Result.Choice := GetSearchType()
+    }
+    SurfaceClick(*) {
+        Result.Choice := "ПОВЕРХНОСТНЫЙ"
+        MyGui.Hide()
+    }
+    PersonalClick(*) {
+        Result.Choice := "ЛИЧНЫЙ"
+        MyGui.Hide()
+    }
+    
     MyGui.Add("Button", "Default", "ЧТО ЭТО?").OnEvent("Click", InfoClick)
     MyGui.Add("Button", "x+m", "ПОВЕРХНОСТНЫЙ").OnEvent("Click", SurfaceClick)
     MyGui.Add("Button", "x+m", "ЛИЧНЫЙ").OnEvent("Click", PersonalClick)
@@ -277,9 +318,18 @@ GetWitnessChoice() {
     MyGui.SetFont("s9 w400", "Montserrat")
     MyGui.Title := "Понятые"
     MyGui.Add("Text",, "Понятые присутствуют?")
+    
     Choice := ""
-    WithClick(*) { Choice := "С ПОНЯТЫМИ" ; MyGui.Hide() }
-    WithoutClick(*) { Choice := "БЕЗ ПОНЯТЫХ" ; MyGui.Hide() }
+    
+    WithClick(*) {
+        Choice := "С ПОНЯТЫМИ"
+        MyGui.Hide()
+    }
+    WithoutClick(*) {
+        Choice := "БЕЗ ПОНЯТЫХ"
+        MyGui.Hide()
+    }
+    
     MyGui.Add("Button", "Default w100 y+10 x10", "С ПОНЯТЫМИ").OnEvent("Click", WithClick)
     MyGui.Add("Button", "x+10 w100", "БЕЗ ПОНЯТЫХ").OnEvent("Click", WithoutClick)
     MyGui.Show()
@@ -293,7 +343,9 @@ GetContrabandQuestion() {
     MyGui.SetFont("s9 w400", "Montserrat")
     MyGui.Title := "Обнаружение запрещённых предметов"
     MyGui.Add("Text",, "Есть запрещёнка?")
+    
     Choice := ""
+    
     MyGui.Add("Button", "Default w70 y+10 x10", "ДА").OnEvent("Click", (*) => (Choice := "ДА", MyGui.Hide()))
     MyGui.Add("Button", "x+10 w70", "НЕТ").OnEvent("Click", (*) => (Choice := "НЕТ", MyGui.Hide()))
     MyGui.Show()
@@ -350,9 +402,18 @@ GetArrestChoice() {
     MyGui.SetFont("s9 w400", "Montserrat")
     MyGui.Title := "Доставление"
     MyGui.Add("Text",, "Куда доставляем задержанного?")
+    
     Choice := ""
-    CarClick(*) { Choice := "МАШИНА" ; MyGui.Hide() }
-    KPClick(*) { Choice := "ИВС" ; MyGui.Hide() }
+    
+    CarClick(*) {
+        Choice := "МАШИНА"
+        MyGui.Hide()
+    }
+    KPClick(*) {
+        Choice := "ИВС"
+        MyGui.Hide()
+    }
+    
     MyGui.Add("Button", "Default w100 y+10 x10", "К МАШИНЕ").OnEvent("Click", CarClick)
     MyGui.Add("Button", "x+10 w100", "В ИВС").OnEvent("Click", KPClick)
     MyGui.Show()
@@ -366,11 +427,26 @@ GetExtractChoice() {
     MyGui.SetFont("s9 w400", "Montserrat")
     MyGui.Title := "Вытаскивание из машины"
     MyGui.Add("Text",, "Выберите причину:")
+    
     Choice := ""
-    RefuseClick(*) { Choice := "ОТКАЗ" ; MyGui.Hide() }
-    CriminalClick(*) { Choice := "РОЗЫСК/УГОН" ; MyGui.Hide() }
-    DangerClick(*) { Choice := "ОПАСНОСТЬ" ; MyGui.Hide() }
-    RescueClick(*) { Choice := "СПАСЕНИЕ" ; MyGui.Hide() }
+    
+    RefuseClick(*) {
+        Choice := "ОТКАЗ"
+        MyGui.Hide()
+    }
+    CriminalClick(*) {
+        Choice := "РОЗЫСК/УГОН"
+        MyGui.Hide()
+    }
+    DangerClick(*) {
+        Choice := "ОПАСНОСТЬ"
+        MyGui.Hide()
+    }
+    RescueClick(*) {
+        Choice := "СПАСЕНИЕ"
+        MyGui.Hide()
+    }
+    
     MyGui.Add("Button", "Default w140 y+10 x10", "ОТКАЗ ПОДЧИНИТЬСЯ").OnEvent("Click", RefuseClick)
     MyGui.Add("Button", "x+5 w140", "РОЗЫСК/УГОН").OnEvent("Click", CriminalClick)
     MyGui.Add("Button", "w140 y+5 x10", "ОПАСНОЕ ПОВЕДЕНИЕ").OnEvent("Click", DangerClick)
@@ -386,9 +462,18 @@ GetExtractDoorChoice() {
     MyGui.SetFont("s9 w400", "Montserrat")
     MyGui.Title := "Дверь"
     MyGui.Add("Text",, "Дверь не заблокирована?")
+    
     Choice := ""
-    YesClick(*) { Choice := "ЗАБЛОКИРОВАНА" ; MyGui.Hide() }
-    NoClick(*) { Choice := "ОТКРЫТА" ; MyGui.Hide() }
+    
+    YesClick(*) {
+        Choice := "ЗАБЛОКИРОВАНА"
+        MyGui.Hide()
+    }
+    NoClick(*) {
+        Choice := "ОТКРЫТА"
+        MyGui.Hide()
+    }
+    
     MyGui.Add("Button", "Default w100 y+10 x10", "ДА (заблокирована)").OnEvent("Click", YesClick)
     MyGui.Add("Button", "x+10 w100", "НЕТ (открыта)").OnEvent("Click", NoClick)
     MyGui.Show()
@@ -1183,7 +1268,7 @@ F9::
     Sleep(30)
     Send("{. up}")
     PauseWithCheck(300)
-    SendText("/me достал АС «Вал» из-за спины")
+    SendText("/me снял АС «Вал» с груди (da da da)")
     Send("{Enter}")
     PauseWithCheck(300)
 
