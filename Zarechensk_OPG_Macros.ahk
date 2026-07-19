@@ -4,44 +4,41 @@ SetKeyDelay(50, 50)
 
 ; ===== ГЛОБАЛЬНЫЕ НАСТРОЙКИ =====
 global StopMacro := false
+global LoadedFonts := []
 
 if (A_Args.Length == 0 || A_Args[1] != "FromLauncher") {
     MsgBox("Ошибка: Запуск макроса разрешен только через Лаунчер!", "Отказ в доступе", "IconX")
     ExitApp()
 }
 
-; =====================================================
-;   АВТОМАТИЧЕСКАЯ ЗАГРУЗКА ШРИФТОВ MONTSERRAT
-; =====================================================
-global LoadedFonts := []
-global FontUrls := [
-    "https://github.com/google/fonts/raw/main/ofl/montserrat/Montserrat-Regular.ttf",
-    "https://github.com/google/fonts/raw/main/ofl/montserrat/Montserrat-Light.ttf",
-    "https://github.com/google/fonts/raw/main/ofl/montserrat/Montserrat-SemiBold.ttf"
+; ===== ПУТЬ К ПАПКЕ ASSETS (ПОЛЬЗОВАТЕЛЬСКАЯ) =====
+global AssetsPath := "C:\Users\" A_UserName "\Binders\assets\"
+
+; ===== СПИСОК ШРИФТОВ =====
+global FontFiles := [
+    "Montserrat-Regular.ttf",
+    "Montserrat-Light.ttf",
+    "Montserrat-SemiBold.ttf"
 ]
 
 LoadFonts() {
-    global LoadedFonts
-    for url in FontUrls {
-        fName := StrSplit(url, "/")[-1]
-        fPath := A_ScriptDir "\" fName
+    global LoadedFonts, AssetsPath, FontFiles
+    
+    ; Проверяем, существует ли папка Assets
+    if !DirExist(AssetsPath) {
+        MsgBox("Папка Assets не найдена по пути: " AssetsPath "`nЗагрузите шрифты через лаунчер.", "Ошибка", 16)
+        return
+    }
+    
+    for fName in FontFiles {
+        fPath := AssetsPath fName
         
         if !FileExist(fPath) {
-            try {
-                whr := ComObject("WinHttp.WinHttpRequest.5.1")
-                whr.Open("GET", url, false)
-                whr.Send()
-                ADO := ComObject("ADODB.Stream")
-                ADO.Type := 1
-                ADO.Open()
-                ADO.Write(whr.ResponseBody)
-                ADO.SaveToFile(fPath, 2)
-                ADO.Close()
-            } catch {
-                continue 
-            }
+            MsgBox("Шрифт не найден: " fName "`nЗагрузите шрифты через лаунчер.", "Ошибка", 16)
+            continue
         }
         
+        ; Загружаем шрифт из папки Assets
         if DllCall("Gdi32\AddFontResourceEx", "Str", fPath, "UInt", 0x10, "UInt", 0) {
             LoadedFonts.Push(fPath)
         }
