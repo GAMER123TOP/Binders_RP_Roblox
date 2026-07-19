@@ -8,7 +8,7 @@ AutoHotkey скрипты для упрощения РП-отыгровок в R
 (https://github.com/GAMER123TOP/Binders_RP_Roblox/releases/v.2.4.0)
 ![Platform](https://img.shields.io/badge/platform-Windows-0078D6)
 ![License](https://img.shields.io/badge/license-MIT-green)
-(https://github.com/GAMER123TOP/Binders_RP_Roblox/LICENSE)
+(https://github.com/GAMER123TOP/Binders_RP_Roblox/blob/main/LICENSE)
 
 ---
 
