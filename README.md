@@ -68,7 +68,7 @@ AutoHotkey скрипты для упрощения РП-отыгровок в R
 
 - **Discord:** [gamer123top](https://discord.com/users/gamer123top)
 - **Telegram:** [@GAMER123TOPTG](https://t.me/GAMER123TOPTG)
-- **Discord сервер студии:** [dsc.gg/cubefusion](https://dsc.gg/cubefusion)
+- **Discord сервер студии:** нету в связи закрытия биндера
 
 ---
 
@@ -85,7 +85,7 @@ AutoHotkey скрипты для упрощения РП-отыгровок в R
 
 - **Discord:** [gamer123top](https://discord.com/users/gamer123top)
 - **Telegram:** [@GAMER123TOPTG](https://t.me/GAMER123TOPTG)
-- **Discord сервер студии:** [dsc.gg/cubefusion](https://dsc.gg/cubefusion) → Форум → Идеи
+- **Discord сервер студии:** нету в связи закрытия биндера
 
 Желательно указать:
 - Что вы предлагаете
@@ -100,7 +100,7 @@ AutoHotkey скрипты для упрощения РП-отыгровок в R
 
 - **Discord:** [gamer123top](https://discord.com/users/gamer123top)
 - **Telegram:** [@GAMER123TOPTG](https://t.me/GAMER123TOPTG)
-- **Discord сервер студии:** [dsc.gg/cubefusion](https://dsc.gg/cubefusion) → Форум → Баги
+- **Discord сервер студии:** нету в связи закрытия биндера
 
 Желательно указать:
 - Что произошло
